@@ -1,7 +1,3 @@
-
-
-
-
 import java.lang.ref.WeakReference;
 
 public class WeakRefDemo {
