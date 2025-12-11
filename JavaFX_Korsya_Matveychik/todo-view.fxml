@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="12" alignment="TOP_CENTER"
+      xmlns:fx="http://javafx.com/fxml"
+      xmlns="http://javafx.com/javafx"
+      fx:controller="myapp.TodoController"
+      stylesheets="@style.css"
+      prefWidth="400" prefHeight="350">
+
+<Label text="To-Do:" styleClass="title"/>
+
+<HBox spacing="10" alignment="CENTER">
+    <TextField fx:id="inputField" promptText="Введите задачу..." HBox.hgrow="ALWAYS"/>
+    <Button text="Добавить" onAction="#onAddClick" styleClass="add-button"/>
+</HBox>
+
+<ListView fx:id="todoList" VBox.vgrow="ALWAYS"/>
+
+</VBox>
+
+

@@ -1,0 +1,197 @@
+.root {
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+    -fx-font-size: 14px;
+    -fx-background-color: #f5f5f5;
+}
+
+
+.title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-padding: 15 0 20 0;
+    -fx-text-fill: #333333;
+}
+
+
+.text-field {
+    -fx-background-color: white;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 4px;
+    -fx-border-width: 1px;
+    -fx-padding: 8px 12px;
+    -fx-font-size: 14px;
+}
+
+.text-field:focused {
+    -fx-border-color: #999999;
+    -fx-border-width: 1.5px;
+    -fx-background-color: white;
+}
+
+/* Кнопка добавления */
+.add-button {
+    -fx-background-color: #666666;
+    -fx-text-fill: white;
+    -fx-padding: 8px 20px;
+    -fx-background-radius: 4px;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+    -fx-border-color: transparent;
+}
+
+.add-button:hover {
+    -fx-background-color: #555555;
+}
+
+.add-button:pressed {
+    -fx-background-color: #444444;
+}
+
+.list-view {
+    -fx-background-color: white;
+    -fx-border-color: #dddddd;
+    -fx-border-radius: 4px;
+    -fx-border-width: 1px;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+.list-view:focused {
+    -fx-background-insets: 0;
+}
+
+.list-cell {
+    -fx-padding: 0;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+
+.list-cell:filled:selected, .list-cell:filled:selected:hover {
+    -fx-background-color: transparent;
+    -fx-text-fill: black;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: #f9f9f9;
+}
+
+.list-cell:filled {
+    -fx-border-color: #eeeeee;
+    -fx-border-width: 0 0 1px 0;
+}
+
+.list-cell:empty {
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+}
+
+
+.todo-item-container {
+    -fx-alignment: center-left;
+    -fx-padding: 12px 15px;
+}
+
+
+.todo-checkbox {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333;
+    -fx-cursor: hand;
+}
+
+.todo-checkbox .box {
+    -fx-background-color: white;
+    -fx-border-color: #aaaaaa;
+    -fx-border-radius: 3px;
+    -fx-border-width: 1px;
+}
+
+.todo-checkbox:hover .box {
+    -fx-border-color: #888888;
+}
+
+.todo-checkbox:selected .box {
+    -fx-background-color: #666666;
+    -fx-border-color: #666666;
+}
+
+.todo-checkbox:selected .mark {
+    -fx-background-color: white;
+}
+
+
+.todo-checkbox.completed {
+    -fx-text-fill: #888888;
+    -fx-strikethrough: true;
+}
+
+
+.delete-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #aaaaaa;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-padding: 2px 8px 2px 8px;
+    -fx-cursor: hand;
+    -fx-border-color: transparent;
+    -fx-border-radius: 3px;
+    -fx-min-width: 30px;
+    -fx-max-width: 30px;
+    -fx-font-family: "Arial";
+}
+
+.delete-button:hover {
+    -fx-background-color: #f0f0f0;
+    -fx-text-fill: #ff4444;
+}
+
+.delete-button:pressed {
+    -fx-background-color: #e0e0e0;
+}
+
+
+.input-panel {
+    -fx-spacing: 10px;
+    -fx-padding: 15px;
+    -fx-background-color: white;
+    -fx-border-color: #dddddd;
+    -fx-border-radius: 4px;
+    -fx-border-width: 1px;
+}
+
+
+.main-container {
+    -fx-spacing: 20px;
+    -fx-padding: 20px;
+    -fx-background-color: #f5f5f5;
+}
+
+
+.scroll-bar:vertical {
+    -fx-background-color: #f0f0f0;
+    -fx-background-radius: 0;
+}
+
+.scroll-bar:vertical .track {
+    -fx-background-color: #f0f0f0;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #cccccc;
+    -fx-background-radius: 4px;
+}
+
+.scroll-bar:vertical .thumb:hover {
+    -fx-background-color: #bbbbbb;
+}
+
+.scroll-bar .increment-button, .scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 0;
+}
+
+.scroll-bar:vertical .increment-arrow, .scroll-bar:vertical .decrement-arrow {
+    -fx-background-color: #999999;
+}
